@@ -43,6 +43,7 @@ values
 (5,'INGENIERIA DE REDES Y TELECOMUNICACION',TRUE),
 (15,'INGENIERIA DE SISTEMAS',FALSE),
 
+ALTER SEQUENCE campo_id_seq RESTART WITH 1;
 
 -- ---------------------------------
 ALTER TABLE carrera ALTER COLUMN nombre TYPE varchar(40);
