@@ -46,6 +46,7 @@ values
 ALTER SEQUENCE campo_id_seq RESTART WITH 1;
 
 
+
 ALTER TABLE carrera ALTER COLUMN nombre TYPE varchar(40);
 
 insert into carrera 
@@ -76,6 +77,16 @@ insert into carrera (nombre,mec)
 values
 ('INGENIERIA DE SISTEMAS',FALSE);
 
+
+-- actualizar regsitro de psicologia
+
+update carrera set nombre='PSICOLOGIA' 
+WHERE id_carrera=3;
+
+-- son equivalente
+
+update carrera set nombre=upper(nombre) 
+WHERE id_carrera in (3,6,70); -- between
 
 
 
