@@ -45,7 +45,7 @@ values
 
 ALTER SEQUENCE campo_id_seq RESTART WITH 1;
 
--- ---------------------------------
+
 ALTER TABLE carrera ALTER COLUMN nombre TYPE varchar(40);
 
 insert into carrera 
@@ -57,6 +57,24 @@ values
 insert into carrera (nombre,mec) 
 values
 ('INGENIERIA INDUSTRIAL',TRUE);
+
+-- ingresando estudiantes
+
+INSERT INTO ESTUDIANTE
+(fecha_inscripcion,id_persona,id_carrera)
+values
+('2019-01-02',1,2);
+
+
+--  eliminando carrera de sistemas por contener errores en el id
+
+delete from carrera where id_carrera=15; 
+
+-- volviendo a insertar carrera de sistemas
+
+insert into carrera (nombre,mec) 
+values
+('INGENIERIA DE SISTEMAS',FALSE);
 
 
 
