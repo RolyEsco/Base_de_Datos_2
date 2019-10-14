@@ -31,11 +31,38 @@ id_persona int REFERENCES persona(id_persona)
 -- DML  Lenguaje de Manipulacion de DAtos
 -- insert (insertar), update (actualizar), delete (eliminar)
 
-insert into persona values(primer_apellido,segundo_apellido,nombre,ci,fecha_nacimiento)
+insert into persona (primer_apellido,segundo_apellido,nombre,ci,fecha_nacimiento)
 values
 ('ESCOBAR','COLQUE','ROLLY','4073157','1989-05-30'),
 ('MAMANI','CHOQUE','MARIA','4032337','1999-12-12'),
 ('ESCALERA','GUTIERREZ','MARCELA','5025457','1999-12-25');
+
+
+insert into carrera 
+values
+(5,'INGENIERIA DE REDES Y TELECOMUNICACION',TRUE),
+(15,'INGENIERIA DE SISTEMAS',FALSE),
+
+
+-- ---------------------------------
+ALTER TABLE carrera ALTER COLUMN nombre TYPE varchar(40);
+
+insert into carrera 
+values
+(5,'INGENIERIA DE REDES Y TELECOMUNICACION',TRUE),
+(15,'INGENIERIA DE SISTEMAS',FALSE);
+
+
+insert into carrera (nombre,mec) 
+values
+('INGENIERIA INDUSTRIAL',TRUE);
+
+
+
+
+
+
+
 
 
 
