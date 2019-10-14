@@ -1,4 +1,6 @@
 
+https://github.com/RolyEsco/Base_de_Datos_2
+
 
 CREATE TABLE persona
 (id_persona serial PRIMARY KEY,
@@ -22,3 +24,6 @@ fecha_inscripcion date NOT NULL,
 id_carrera int REFERENCES carrera(id_carrera),
 id_persona int REFERENCES persona(id_persona)
 );
+
+
+
