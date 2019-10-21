@@ -1,3 +1,10 @@
+
+
+-- DDL  Lenguaje de Defincion de Datos
+-- ========================================
+-- create table, alter table
+
+
 CREATE TABLE persona
 (id_persona serial PRIMARY KEY,
 primer_apellido varchar(30) NOT NULL,
@@ -41,7 +48,7 @@ values
 -- se nos olvido agregar el atributo genero
 -- alterando la tabla agregando una columna
 
-alter table persona add column genero varchar(9) not null;
+alter table persona add column genero varchar(9) default 'FEMENINO';
 
 -- Debemos actualizar los datos de genero en los registros existentes
 
@@ -51,6 +58,8 @@ update persona set genero='FEMENINO';
 -- CONSULTA NO eficiente ya que actualizara todos los registros
 
 update persona set genero='FEMENINO' where id_persona in (2,3,4,5); 
+update persona set genero='FEMENINO' where id_persona between 2 and 5; 
+
 -- consulta eficiente
 
 update persona set genero='MASCULINO' where id_persona in (1,6);
