@@ -64,9 +64,9 @@ update persona set genero='FEMENINO' where id_persona between 2 and 5;
 
 update persona set genero='MASCULINO' where id_persona in (1,6);
 
--- drop table estudiante
 -- drop table persona
--- drop table materia
+-- drop table estudiante;
+-- drop table carrera ;
 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -- Ingresando carreras
@@ -101,11 +101,11 @@ alter table carrera alter column nombre type varchar(40);
 INSERT INTO estudiante
 (fecha_inscripcion,id_persona,id_carrera,activo)
 values
-('2019-01-02',1,1,true);
-('2019-01-02',2,2,true);
-('2019-01-02',3,1,true);
-('2019-01-02',4,4,true);
-('2019-01-02',5,6,true);
+('2019-01-02',1,1,true),
+('2019-01-02',2,2,true),
+('2019-01-02',3,1,true),
+('2019-01-02',4,4,true),
+('2019-01-02',5,6,true),
 ('2019-01-02',6,2,true);
 
 -- sentencia para actualizar el campo autonumerico
