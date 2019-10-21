@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+
+https://github.com/RolyEsco/Base_de_Datos_2
+
+-- DDL Lenguaje de defifinion de datos
+--  create table
+-- alter table
+
+>>>>>>> fc94b380c7b141693fe735c8395dc5cdfb1ca89b
 CREATE TABLE persona
 (id_persona serial PRIMARY KEY,
 primer_apellido varchar(30) NOT NULL,
@@ -24,12 +34,16 @@ id_persona int REFERENCES persona(id_persona)
 -- DML  Lenguaje de Manipulacion de DAtos
 -- insert (insertar), update (actualizar), delete (eliminar)
 
+<<<<<<< HEAD
 -- insertando 6 registros a la tabla persona
 
+=======
+>>>>>>> fc94b380c7b141693fe735c8395dc5cdfb1ca89b
 insert into persona (primer_apellido,segundo_apellido,nombre,ci,fecha_nacimiento)
 values
 ('ESCOBAR','COLQUE','ROLLY','4073157','1989-05-30'),
 ('MAMANI','CHOQUE','MARIA','4032337','1999-12-12'),
+<<<<<<< HEAD
 ('ESCALERA','GUTIERREZ','MARCELA','5025457','1999-12-25'),
 ('YUCRA','HUERTA','MARISOL','4076187','1989-05-30'),
 ('JIMENEZ','ARCE','KATHIA MARIA','4882337','1990-11-06'),
@@ -56,6 +70,9 @@ select * from persona;
 
 
 
+=======
+('ESCALERA','GUTIERREZ','MARCELA','5025457','1999-12-25');
+>>>>>>> fc94b380c7b141693fe735c8395dc5cdfb1ca89b
 
 
 insert into carrera 
@@ -108,3 +125,19 @@ WHERE id_carrera=3;
 update carrera set nombre=upper(nombre) 
 WHERE id_carrera in (3,6,70); -- between
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> fc94b380c7b141693fe735c8395dc5cdfb1ca89b
